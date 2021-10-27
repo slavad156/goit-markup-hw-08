@@ -12,6 +12,10 @@
 
 .footer-social__list {
   display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__icon {

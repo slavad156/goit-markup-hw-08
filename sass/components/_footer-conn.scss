@@ -1,5 +1,16 @@
-.footer-conntacts__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-conntacts {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.footer-conntacts__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-conntacts__link {

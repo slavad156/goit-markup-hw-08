@@ -10,13 +10,17 @@
 }
 
 .form-footer__subscription {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .form-footer__input {
-  margin-right: 12px;
+  margin-bottom: 20px;
+
   padding: 15px 0 15px 16px;
-  width: 358px;
+
+  width: 100%;
   height: 50px;
 
   background-color: transparent;
@@ -43,10 +47,23 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+
+    width: 358px;
+  }
 }
 
 .form-footer__button {
   padding: 10px 28px 10px 29px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-family: inherit;
   font-weight: 700;
