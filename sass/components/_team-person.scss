@@ -1,0 +1,63 @@
+.person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
+}
+
+.person__name {
+  margin-bottom: 10px;
+
+  color: var(--secondary-color-text);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.person__speciality {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.person__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.person__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+
+  transition: background-color 250ms var(--time-animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+  }
+}
+
+.person__icon {
+  fill: #afb1b8;
+  transition: fill 250ms var(--time-animation);
+
+  .person__link:hover &,
+  .person__link:focus & {
+    fill: var(--white-color);
+  }
+}

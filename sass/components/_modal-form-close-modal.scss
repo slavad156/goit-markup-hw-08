@@ -1,0 +1,27 @@
+.modal-form__close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.modal-form__close-icon {
+  display: block;
+  fill: #000000;
+
+  transition: fill 250ms var(--time-animation);
+
+  .modal-form__close-modal:hover &,
+  .modal-form__close-modal:focus & {
+    fill: var(--accent);
+  }
+}
