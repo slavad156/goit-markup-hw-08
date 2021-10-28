@@ -10,8 +10,14 @@
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 
   color: var(--primary-color-text);
 
@@ -52,8 +58,14 @@
 
 .modal-form__policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 
   text-decoration-line: underline;
 
