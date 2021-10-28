@@ -1,10 +1,28 @@
 .header-conn {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
-.header-conn__item:not(:last-child) {
-  margin-right: 50px;
+.header-conn__item {
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .header-conn__link {
@@ -12,8 +30,8 @@
   text-decoration: none;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
 
   display: inline-flex;
@@ -25,9 +43,15 @@
   &:focus {
     color: var(--accent);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
-.conn-icon {
+.conn-icon__mail,
+.conn-icon__tel {
   fill: var(--primary-color-text);
   margin-right: 10px;
 
@@ -36,5 +60,16 @@
   .header-conn__link:hover &,
   .header-conn__link:focus & {
     fill: var(--accent);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conn-icon__mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  .conn-icon__tel {
+    height: 16px;
   }
 }

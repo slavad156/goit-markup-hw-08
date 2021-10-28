@@ -1,3 +1,9 @@
+.footer-social {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 33px;
+  }
+}
+
 .footer-social__text {
   display: block;
   color: var(--white-color);

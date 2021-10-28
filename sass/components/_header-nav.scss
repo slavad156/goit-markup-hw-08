@@ -1,5 +1,9 @@
 .header-nav {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-nav__item:not(:last-child) {
