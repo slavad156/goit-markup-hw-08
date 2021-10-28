@@ -17,6 +17,7 @@
 }
 
 .menu-toggle__icon--open {
+  fill: #000000;
   .menu-toggle:hover &,
   .menu-toggle:focus & {
     fill: var(--accent);
@@ -24,6 +25,7 @@
 }
 
 .menu-toggle__icon--close {
+  fill: var(--secondary-color-text);
   .menu-toggle:hover &,
   .menu-toggle:focus & {
     fill: var(--accent);
