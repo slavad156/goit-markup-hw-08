@@ -2,6 +2,12 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__big-padding {
+      padding-bottom: 56px;
+    }
+  }
 }
 
 .card-content__title {
