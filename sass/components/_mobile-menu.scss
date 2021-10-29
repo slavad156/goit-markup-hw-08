@@ -38,6 +38,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 48px 40px;
   background-color: var(--white-color);
   z-index: 10;
