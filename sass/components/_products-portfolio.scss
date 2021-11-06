@@ -30,7 +30,8 @@
 }
 
 .products__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: inherit;
   text-decoration: none;
 
